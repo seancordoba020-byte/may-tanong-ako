@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body { text-align: center; font-family: 'Arial', sans-serif; background-color: #ffe6e6; padding: 50px; }
+        .container { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: inline-block; }
+        h1 { color: #ff4d4d; }
+        .buttons { margin-top: 20px; }
+        button { font-size: 1.2rem; padding: 10px 20px; border: none; border-radius: 10px; cursor: pointer; transition: 0.3s; }
+        #yesBtn { background-color: #ff4d4d; color: white; margin-right: 10px; }
+        #noBtn { background-color: #ccc; color: #333; position: absolute; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will you be my Valentine? ❤️</h1>
+        <div class="buttons">
+            <button id="yesBtn" onclick="alert('Yay! See you! 😘')">Yes</button>
+            <button id="noBtn" onmouseover="moveButton()" onclick="moveButton()">No</button>
+        </div>
+    </div>
+
+    <script>
+        function moveButton() {
+            var x = Math.random() * (window.innerWidth - 100);
+            var y = Math.random() * (window.innerHeight - 100);
+            var btn = document.getElementById('noBtn');
+            btn.style.left = x + 'px';
+            btn.style.top = y + 'px';
+        }
+    </script>
+</body>
+</html>
