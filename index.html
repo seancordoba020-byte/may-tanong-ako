@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will You Be My Valentine?</title>
+    <title>carlita may tanong ako</title>
     <style>
         body { text-align: center; font-family: 'Arial', sans-serif; background-color: #ffe6e6; padding: 50px; }
         .container { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: inline-block; }
@@ -32,5 +32,14 @@
             btn.style.top = y + 'px';
         }
     </script>
+    <script>
+  document.body.addEventListener('click', function() {
+    var audio = document.getElementById('bgMusic');
+    if (audio.paused) {
+      audio.play();
+    }
+  }, { once: true });
+</script>
+
 </body>
 </html>
